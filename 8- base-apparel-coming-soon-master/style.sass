@@ -1,0 +1,75 @@
+$dr: hsl(0, 36%, 70%)
+$sr: hsl(0, 93%, 68%)
+$dgr: hsl(0, 6%, 24%)
+// both gradients not working
+$grad: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0,100%, 98%))
+$grad__dois: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0,74%, 74%))
+    
+*
+    box-sizing: border-box
+
+html
+    font-size: 16px
+    font-family: 'josefin sans', sans-serif
+    
+body
+    margin: 0
+
+h1
+    text-align: center
+    font-size: 2.5rem
+    font-weight: 300
+    color: $dr
+    letter-spacing: .8rem
+    text-transform: uppercase
+    margin: 3rem 4rem 1.5rem 4rem
+    // border: 1px solid red
+
+    & span
+        font-weight: 600
+        color: $dgr
+
+input
+    margin: 2rem 0
+    padding: 1rem 7rem 1rem 1rem
+    color: $dr
+    border-radius: 50px
+    border: 1px solid $dr
+
+    &::placeholder
+        color: $dr
+        font-family: 'josefin sans'
+        letter-spacing: 1px
+        font-weight: 600
+        font-size: 1rem
+
+.email
+    justify-content: center
+    // text-align: center
+    display: flex
+    align-items: center
+    margin: auto    
+
+.btn
+    background-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0,74%, 74%))
+    padding: .75rem 1.8rem
+    border-radius: 50px
+    align-items: center
+    margin-left: -3.5rem
+
+.txt
+    margin: 0 1.5rem
+    line-height: 1.8rem
+    text-align: center
+    letter-spacing: 1px
+    font-size: .8rem
+    font-weight: 600
+    color: $dr
+
+
+.img__desktop
+    display: none
+
+.logo
+    margin: 2rem
+    width: 6rem
